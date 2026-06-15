@@ -4,7 +4,7 @@ import { Code2, MonitorPlay, Zap, Coffee } from 'lucide-react';
 
 export default function About() {
   const stats = [
-    { label: 'Projects Completed', value: '4+', icon: <MonitorPlay className="text-neon-green" /> },
+    { label: 'Projects Completed', value: '3+', icon: <MonitorPlay className="text-neon-green" /> },
     { label: 'Lines of Code', value: '10k+', icon: <Code2 className="text-neon-green" /> },
     { label: 'Fast Delivery', value: '100%', icon: <Zap className="text-neon-green" /> },
   ];

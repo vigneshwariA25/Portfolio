@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ChevronRight, Download } from 'lucide-react';
 import PROFILE from './assets/PROFILE.jpg';
 // import VIGNESHWARI from './assets/VIGNESHWARI.png';
-import resumePDF from './assets/resume/VIGNESHWARI A.pdf';
+import resumePdf from './assets/resume/VIGNESHWARI A.pdf';
 
 export default function Header() {
   const handleResumeDownload = () => {
