@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-dark-900 text-gray-200 antialiased overflow-x-hidden selection:bg-neon-green selection:text-black font-sans;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-dark-800/40 backdrop-blur-md border border-white/10;
+  }
+  .glass-hover {
+    @apply hover:bg-dark-800/60 hover:border-neon-green/30 transition-all duration-300;
+  }
+  .neon-text {
+    @apply text-neon-green drop-shadow-[0_0_8px_rgba(0,255,102,0.8)];
+  }
+  .neon-border {
+    @apply border border-neon-green shadow-[0_0_10px_rgba(0,255,102,0.2)];
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400;
+  }
+}
+
+/* Custom Grid Background */
+.bg-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  mask-image: radial-gradient(circle at center, black, transparent 80%);
+  z-index: -2;
+  pointer-events: none;
+}
